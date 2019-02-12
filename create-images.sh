@@ -18,8 +18,8 @@ EOF
   exit 2
 }
 
-HUB="docker.io/maistra"
-DEFAULT_IMAGES="citadel pilot mixer sidecar-injector proxy-init galley istio-operator proxyv2"
+HUB="docker.io/bdecoste"
+DEFAULT_IMAGES="proxyv2"
 IMAGES=${ISTIO_IMAGES:-$DEFAULT_IMAGES}
 
 while getopts ":t:h:bdp" opt; do
